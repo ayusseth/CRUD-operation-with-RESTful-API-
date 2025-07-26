@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.3</version>
+		<version>3.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.sp</groupId>
-	<artifactId>RestApi</artifactId>
+	<artifactId>RestAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RestApi</name>
-	<description>Demo project for RESTful API </description>
+	<name>RestAPI</name>
+	<description>Demo project for RESTful API</description>
 	<url/>
 	<licenses>
 		<license/>
