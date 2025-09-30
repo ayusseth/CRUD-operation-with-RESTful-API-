@@ -2,7 +2,6 @@ package in.sp.RestApi.controller;
 
 import in.sp.RestApi.entities.User;
 import in.sp.RestApi.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
