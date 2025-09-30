@@ -11,8 +11,13 @@ import java.util.Optional;
 
 @Service        //it tells the spring that this class is ready to create its bean, and it Allows dependency injection with @Autowired in other classes.
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private UserRepository userRepository;
+//    @Autowired
+//    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public UserServiceImpl(UserRepository userRepository){
+        this.userRepository=userRepository;
+    }
 
     @Override
     public User createUser(User user) {
