@@ -39,16 +39,7 @@ public class Mycontroller {
     public ResponseEntity<User> updateUserDetails(@PathVariable int id, @RequestBody User user)
     {
         User updateduser=userService.updateUserDetails(id,user);
-        if(updateduser!=null)
-        {
-            return ResponseEntity.ok(updateduser);      //same as ResponseEntity.notFound().build();
-
-        }
-        else
-        {
-            return ResponseEntity.notFound().build();
-        }
-
+        return ResponseEntity.ok(updateduser);
     }
     @DeleteMapping("/user/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable int id)
