@@ -10,7 +10,7 @@ public interface UserService {
 
     public List<User> getALlUser();
 
-    public Optional<User> getUserDetials(int id);
+    public User getUserDetials(int id);
 
     public User updateUserDetails(int id, User user);
 
