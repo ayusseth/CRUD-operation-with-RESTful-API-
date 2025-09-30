@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> getUserDetials(int id) {
-        return userRepository.findById(id);
+    public User getUserDetials(int id) {
+        return userRepository.findById(id).orElseThrow(()->new UserNotFoundException(id+" is not found"));
     }
 
     @Override
