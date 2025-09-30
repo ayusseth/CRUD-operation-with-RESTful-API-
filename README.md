@@ -71,20 +71,6 @@ This project demonstrates <strong>CRUD operations, exception handling, and datab
   </table>
   <p><strong>Base URL:</strong> <code>http://localhost:8080</code></p>
 
-  <h2>⚠️ Exception Handling</h2>
-  <p>
-    - If a user is <span class="highlight">not found</span>, the API throws <code>UserNotFoundException</code>.<br>
-    - <code>GlobalExceptionHandler</code> catches it and returns a structured JSON response:
-  </p>
-  <pre>{
-  "timestamp": "2025-09-30T06:44:11.483+00:00",
-  "status": 404,
-  "error": "Not Found",
-  "path": "/user"
-}</pre>
-  <p>
-    🛑 You experienced this exact <strong>404 error</strong> in Postman and in the IDE console logs because the controller package was not scanned initially.
-  </p>
 
   <h2>🛠 Tech Stack</h2>
   <ul>
