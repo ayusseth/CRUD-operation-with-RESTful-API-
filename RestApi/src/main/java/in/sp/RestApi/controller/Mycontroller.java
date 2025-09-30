@@ -30,14 +30,8 @@ public class Mycontroller {
 
     @GetMapping("/user/{id}")
     public ResponseEntity<User> getUserDetails(@PathVariable int id) {
-        User user = userService.getUserDetials(id).orElse(null);
-        if (user != null) {
-            return ResponseEntity.ok().body(user);
-        }
-        else
-        {
-            return ResponseEntity.notFound().build();
-        }
+        User user=userService.getUserDetials(id);
+        return ResponseEntity.ok(user);
 
     }
 
