@@ -45,7 +45,7 @@ public class Mycontroller {
     public ResponseEntity<String> deleteUser(@PathVariable int id)
     {
         userService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().body(id+" is deleted");
     }
 
 
