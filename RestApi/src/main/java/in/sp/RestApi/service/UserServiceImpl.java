@@ -40,6 +40,14 @@ public class UserServiceImpl implements UserService {
         if(user.getName()!=null){
             userData.setName(user.getName());
         }
+        if(user.getAge()!=0){
+            userData.setAge(user.getAge());
+        }
+        if(user.getMail()!=null){
+            userData.setMail(user.getMail());
+        }
+        return userRepository.save(userData);
+
     }
 
     @Override
